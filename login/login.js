@@ -16,5 +16,5 @@ function logar() {
         alert("Usuario logado com sucesso")
     }else{
         alert("Usuario não logado")
-    }  
+    }
 }
