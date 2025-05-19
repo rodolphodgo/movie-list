@@ -1,0 +1,57 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-image: url('/image/filme.png'); /* Caminho para a sua imagem */
+    background-size: cover; /* Cobrir todo o fundo do form */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-position: center; /* Centralizar a imagem */
+    height: 300px; /* Defina a altura desejada */
+    width: 400px; /* Defina a largura desejada */
+    justify-content: center; /* Centraliza os itens verticalmente dentro do form */
+    align-items: stretch; /* Estica os itens horizontalmente (padrão para column) */
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o form na tela */
+    align-items: center; /* Centraliza verticalmente o form na tela */
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="button"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+    max-width: 80%; /* Defina a largura máxima desejada (ex: 80% do form) */
+    align-self: center; /* Centraliza os elementos individualmente */
+}
+
+input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    align-self: center; /* Centraliza o link horizontalmente dentro do form */
+}
+
+a:hover {
+    text-decoration: underline;
+}
