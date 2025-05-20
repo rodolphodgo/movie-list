@@ -8,7 +8,8 @@ function logar() {
     let salvaNome = document.getElementById('nome').value
     let salvaSenha = document.getElementById('senha').value
     let achou = usuarios.filter((elemento)=>{
-        return elemento.nome === salvaNome && elemento.salvaSenha === salvaSenha
+        return elemento.nome === salvaNome && elemento.senha === salvaSenha
+
     })
 
     console.log(achou)
