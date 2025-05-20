@@ -17,9 +17,13 @@ function cadastrar() {
     let cidade = document.getElementById('cidade').value;
     let estado = document.getElementById('estado').value;
 
-    const novoUsuario = {
-        nome: nome,
-        senha: senha,
+  if (!nome || !senha || !email || !cpf || !cep || !rua || !numero || !bairro || !cidade || !estado) {
+        alert('Por favor, preencha todos os campos!');
+        return;
+  }
+     const novoUsuario = {
+         nome: nome,
+         senha: senha,
         email: email,
         cpf: cpf,
         endereco: {
@@ -48,6 +52,11 @@ function cadastrar() {
     document.getElementById('bairro').value = '';
     document.getElementById('cidade').value = '';
     document.getElementById('estado').value = '';
+
+    
+   console.log(usuarios) 
+
+    window.location.href = 'login.html';
 }
 
 function buscarEndereco() {
