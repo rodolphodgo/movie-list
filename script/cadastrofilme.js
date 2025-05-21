@@ -1,8 +1,4 @@
-let filmes = [];
-
-if (localStorage.getItem('filmes')) {
-    usuarios = JSON.parse(localStorage.getItem('filmes'));
-}
+let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
 function cadastrarFilme() {
     let nome = document.getElementById('nome').value;
@@ -12,20 +8,28 @@ function cadastrarFilme() {
     let estudio = document.getElementById('estudio').value;
 
     const novoFilme = {
-        nome: nome,
-        ano: ano,
-        diretor: diretor,
-        produtor: produtor,
-        estudio: estudio,
+        nome,
+        ano,
+        diretor,
+        produtor,
+        estudio
     };
 
-    filmes.push(novoFilme);
-    localStorage.setItem('filmes', JSON.stringify(filmes));
-    console.log(filmes);
+    const usuarioLogado = usuarios.find(user => user.logado === true);
 
-    document.getElementById('nome').value = '';
-    document.getElementById('ano').value = '';
-    document.getElementById('diretor').value = '';
-    document.getElementById('produtor').value = '';
-    document.getElementById('estudio').value = '';
+    if (usuarioLogado) {
+        usuarioLogado.filmes.push(novoFilme);
+
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+        document.getElementById('nome').value = '';
+        document.getElementById('ano').value = '';
+        document.getElementById('diretor').value = '';
+        document.getElementById('produtor').value = '';
+        document.getElementById('estudio').value = '';
+
+        console.log("Filme cadastrado com sucesso!", novoFilme);
+    } else {
+        alert("Nenhum usuário logado.");
+    }
 }
