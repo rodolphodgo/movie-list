@@ -14,7 +14,7 @@ function logar() {
 
     console.log(achou)
     if(achou.length>0){
-        alert("Usuario logado com sucesso")
+        window.location.href = "perfil.html";
     }else{
         alert("Usuario não logado")
     }
