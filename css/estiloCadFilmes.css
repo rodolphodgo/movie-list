@@ -4,14 +4,9 @@
     gap: 10px;
     padding: 20px;
     border-radius: 5px;
-    background-image: url('/image/filme.png'); /* Caminho para a sua imagem */
-    background-size: 85%; /* Cobrir todo o fundo do form */
-    background-repeat: no-repeat; /* Não repetir a imagem */
-    background-position: center; /* Centralizar a imagem */
-    height: 200px; /* Defina a altura desejada */
-    width: 300px; /* Defina a largura desejada */
+    width: 600px; /* Defina a largura desejada */
     justify-content: center; /* Centraliza os itens verticalmente dentro do form */
-    align-items: stretch; /* Estica os itens horizontalmente (padrão para column) */
+    align-items: center;
 }
 
 .logo-image {
@@ -19,6 +14,7 @@
     margin: 0 auto 20px auto; /* Centraliza horizontalmente e adiciona margem inferior */
     max-width: 200px; /* Define o tamanho máximo da imagem */
     height: auto;     /* Mantém a proporção */
+    margin-bottom: 0;
 }
 
 body {
@@ -31,14 +27,12 @@ body {
 }
 
 input[type="text"],
-input[type="password"],
-input[type="button"] {
+input[type="password"] {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 3px;
     font-size: 10px;
-    max-width: 80%; /* Defina a largura máxima desejada (ex: 80% do form) */
-    align-self: center; /* Centraliza os elementos individualmente */
+    width: 300px; /* Defina a largura máxima desejada (ex: 80% do form) */
 }
 
 input[type="button"] {
@@ -46,10 +40,18 @@ input[type="button"] {
     color: black;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 10px;
 }
 
 input[type="button"]:hover {
     background-color: #C0C0C0;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
 }
 
 a {
