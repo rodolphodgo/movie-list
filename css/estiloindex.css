@@ -71,6 +71,6 @@ a {
         transform: translateY(100%); /* Começa 100% abaixo (fora da tela) */
     }
     100% {
-        transform: translateY(-300%); /* Termina 100% acima (fora da tela) */
+        transform: translateY(-400%); /* Termina 100% acima (fora da tela) */
     }
 }
