@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <link rel="stylesheet" href="css/estiloperfil.css">
 </head>
 
-<body>
-    <h1>Bem-vindo ao seu Perfil!</h1>
+<body> 
 
-    <div class="button-container">
-        <a href="listafilme.html" class="button">Listar Filmes</a>
-        <a href="cadastrofilmes.html" class="button button-secondary">Cadastrar Filme</a>
-        <a href="meusFilmes.html" >Meus filmes</a>
-
-
-        <button onclick="sair()">Sair</button>
+    <div>
+        <form class="login-form">
+            <img src="image/logo.png" alt="Logo Movie List" class="logo-image">
+            <h2>Bem Vindo ao seu Perfil</h2>
+            <a href="cadastrofilmes.html" class="button button-secondary">Cadastrar Filme</a>
+            <a href="meusFilmes.html" >Meus filmes</a>
+            <input type="button" value="Sair" onclick="sair()"></input>
+        </form>
     </div>
 
     <script src="script/login.js"></script>
