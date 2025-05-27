@@ -24,7 +24,13 @@ function formatarCPF(campo) {
   campo.value = valor;
 }
 
-
+function toggleSenha(icon) {
+    const senhaInput = document.getElementById('senha');
+    const isSenha = senhaInput.type === 'password';
+    senhaInput.type = isSenha ? 'text' : 'password';
+    icon.classList.toggle('fa-eye');
+    icon.classList.toggle('fa-eye-slash');
+  }
 
 
 function cadastrar() {
