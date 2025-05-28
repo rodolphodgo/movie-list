@@ -4,7 +4,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #4682B4;
+    background: linear-gradient(to right, #628fb4, #4682B4, #2d6696);
     font-family: Arial, sans-serif;
 }
 
