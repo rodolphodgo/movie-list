@@ -85,7 +85,7 @@ function cadastrar() {
 }
 
 function buscarEndereco() {
-  const cep = document.getElementById('cep').value.replace(/\D/g, ''); // Remove caracteres não numéricos
+  const cep = document.getElementById('cep').value.replace(/\D/g, '');
   if (cep.length !== 8) {
     alert('CEP inválido!');
     return;
