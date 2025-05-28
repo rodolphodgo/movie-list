@@ -71,6 +71,7 @@ td input {
 .btn-voltar{
     display: inline-block;
     color: black;
+    text-decoration: none;
 }
 
 
