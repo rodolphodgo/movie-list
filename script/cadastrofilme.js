@@ -1,11 +1,19 @@
 let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
 function cadastrarFilme() {
-    let nome = document.getElementById('nome').value;
-    let ano = document.getElementById('ano').value;
-    let diretor = document.getElementById('diretor').value;
-    let produtor = document.getElementById('produtor').value;
-    let estudio = document.getElementById('estudio').value;
+    let nome = document.getElementById('nome').value.trim();
+    let ano = document.getElementById('ano').value.trim();
+    let diretor = document.getElementById('diretor').value.trim();
+    let produtor = document.getElementById('produtor').value.trim();
+    let estudio = document.getElementById('estudio').value.trim();
+
+
+    if (!nome || !ano || !diretor || !produtor || !estudio) {
+        alert('Por favor, preencha todos os campos!');
+        return;
+    }
+
+   
 
     const novoFilme = {
         nome,
@@ -28,6 +36,7 @@ function cadastrarFilme() {
         document.getElementById('produtor').value = '';
         document.getElementById('estudio').value = '';
 
+        alert("Filme cadastrado com sucesso!");
         console.log("Filme cadastrado com sucesso!", novoFilme);
     } else {
         alert("Nenhum usuário logado.");
