@@ -1,5 +1,5 @@
 body {
-    background-color: #4682B4;
+    background: linear-gradient(to right, #88b4d8, #4682B4, #2d6696);
     color: black;
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -43,7 +43,7 @@ a {
 .credits {
     text-align: center;
     transform: translateY(100%);
-    animation: scroll-credits 20s linear forwards;
+    animation: scroll-credits 15s linear infinite;
     margin-top: 550px;
 }
 
@@ -62,15 +62,15 @@ a {
 
 .credits p {
     font-size: 1.2em;
-    margin: 5px 0;
+    margin: 5px 4%;
 }
 
 /* Keyframes para a animação */
 @keyframes scroll-credits {
     0% {
-        transform: translateY(100%); /* Começa 100% abaixo (fora da tela) */
+        transform: translateY(0); /* Começa 100% abaixo (fora da tela) */
     }
     100% {
-        transform: translateY(-400%); /* Termina 100% acima (fora da tela) */
+        transform: translateY(-260%); /* Termina 100% acima (fora da tela) */
     }
 }

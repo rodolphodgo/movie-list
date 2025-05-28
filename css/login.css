@@ -27,7 +27,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #4682B4;
+    background: linear-gradient(to right, #88b4d8, #4682B4, #2d6696);
 }
 
 input[type="text"],

@@ -13,8 +13,6 @@ function cadastrarFilme() {
         return;
     }
 
-   
-
     const novoFilme = {
         nome,
         ano,
