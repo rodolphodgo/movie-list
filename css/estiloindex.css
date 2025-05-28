@@ -68,9 +68,9 @@ a {
 /* Keyframes para a animação */
 @keyframes scroll-credits {
     0% {
-        transform: translateY(0); /* Começa 100% abaixo (fora da tela) */
+        transform: translateY(-100); /* Começa 100% abaixo (fora da tela) */
     }
     100% {
-        transform: translateY(-260%); /* Termina 100% acima (fora da tela) */
+        transform: translateY(-325%); /* Termina 100% acima (fora da tela) */
     }
 }
