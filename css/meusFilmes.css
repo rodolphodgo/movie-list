@@ -1,0 +1,149 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #4682B4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 95%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    margin: 0;
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tabela th {
+    background-color: #708090;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tabela td {
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.tabela tr:nth-child(even) {
+    background-color: #E0E0E0;
+}
+
+.tabela tr:hover {
+    background-color: #D3D3D3;
+}
+
+td input {
+  width: 100%;
+  max-width: 120px;
+  padding: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.btn-voltar{
+    display: inline-block;
+    color: black;
+}
+
+
+.btn-editar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.btn-editar:hover {
+  background-color: #45a049;
+}
+
+.btn-salvar {
+  background-color: #2196F3;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.btn-salvar:hover {
+  background-color: #1976D2;
+}
+
+.btn-cancelar {
+  background-color: #FFC107;
+  color: black;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.btn-cancelar:hover {
+  background-color: #FFA000;
+}
+
+.btn-excluir {
+  background-color: #f44336;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.btn-excluir:hover {
+  background-color: #d32f2f;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        background-size: 95%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .tabela th,
+    .tabela td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

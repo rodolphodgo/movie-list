@@ -26,17 +26,22 @@ filmes.forEach((filme, indice) => {
 
   const btnEditar = document.createElement('button');
   btnEditar.innerText = "Editar";
+  btnEditar.className = "btn-editar";
+  
 
   const btnSalvar = document.createElement('button');
   btnSalvar.innerText = "Salvar";
+   btnSalvar.className = "btn-salvar";
   btnSalvar.style.display = "none";
 
   const btnCancelar = document.createElement('button');
   btnCancelar.innerText = "Cancelar";
+  btnCancelar.className = "btn-cancelar";
   btnCancelar.style.display = "none";
 
   const btnExcluir = document.createElement('button');
   btnExcluir.innerText = "Excluir";
+   btnExcluir.className = "btn-excluir";
 
 
   btnEditar.onclick = () => {
