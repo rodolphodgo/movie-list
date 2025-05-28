@@ -41,7 +41,7 @@ filmes.forEach((filme, indice) => {
 
   const btnExcluir = document.createElement('button');
   btnExcluir.innerText = "Excluir";
-   btnExcluir.className = "btn-excluir";
+  btnExcluir.className = "btn-excluir";
 
 
   btnEditar.onclick = () => {
